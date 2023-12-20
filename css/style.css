@@ -1,0 +1,417 @@
+/* Настройки для заднего фона и header */
+body {
+    margin: 0;
+    background: #25516d;
+    box-shadow: 0 -200px 100px -120px crimson inset;
+    animation: background 5s infinite alternate;
+    font-family: "Rethink Sans", sans-serif;
+}
+  
+  @keyframes background {
+    50% {
+      background: #004741;
+      box-shadow: 0 -200px 100px -100px yellowgreen inset;
+    }
+  }
+
+header {
+    background: linear-gradient(to right, #25516d, #011828, #004741);
+    border-bottom: 2px solid white;
+    display: flex;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+footer {
+    background: #011828;
+    margin-top: 200px;
+    padding: 5%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+}
+
+a {
+    background-image: linear-gradient(to right, white, rgb(187, 187, 187)); /* Параметры градиента */
+    background-repeat: no-repeat; /* Фон не повторяется */
+    background-size: 10px 2px; /* Линия будет шириной 10px и высотой 2px */
+    background-position: left bottom; /* Положение в левом нижнем углу */
+    padding-bottom: 2px; /* Расстояние от текста до линии */
+    text-decoration: none; /* Убираем подчёркивание */
+    transition: 0.3s; /* Время перехода */
+    color: white;
+}
+
+a:hover {
+    background-size: 100% 2px; /* Линия занимает всю ширину */
+   }
+
+li {
+    list-style-type: none;
+}
+
+.logo {
+    margin: 20px;
+    margin-left: 5%;
+    font-size: 56px;
+    text-shadow:
+    1px 1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    -1px -1px 0 white;
+    transition: 0.2s; /* Время перехода */
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.logo:hover {
+	background: rgba(0,0,0,0);
+	color: #009b8e;
+}
+
+.navigation-main {
+    display: flex;
+    margin-left: 35%;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-block {
+    text-transform: uppercase;
+    padding-top: 4%;
+    font-size: 26px;
+    text-shadow:
+    1px 1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    -1px -1px 0 black;
+    
+}
+
+/* Настройки для областей */
+
+.first-wrapper {
+    /*Изображение от pikisuperstar на Freepik */
+    background: url(../img/background.jpg);
+    margin-top: 200px;
+    padding: 5%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.second-wrapper {
+    background: url(../img/background.jpg) 2000px;
+    margin-top: 300px;
+    padding: 5%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.third-wrapper {
+    background: url(../img/background.jpg) 3000px;
+    margin-top: 300px;
+    padding: 5%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.fourth-wrapper {
+    background: url(../img/background.jpg) 5000px;
+    margin-top: 300px;
+    padding: 5%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    max-height: 500px;
+}
+
+.button {
+    height: 42px;
+	border: none;
+	background: #00ffea;
+	color: black;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease; 
+}
+
+.button:hover {
+    cursor: pointer;
+    height: 42px;
+	border: none;
+	background: #009b8e;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease; 
+}
+
+/* Настройки для первой области */
+
+.title-main {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+
+.description-main {
+    text-align: center;
+    font-size: 26px;
+    color: white;
+}
+
+.container-main {
+    margin-left: 15%;
+    display: flex;
+    gap: 300px;
+}
+
+.title-block {
+    font-size: 26px;
+    color: white;
+}
+
+.img-block-HTML5 {
+    width: 250px;
+    margin-left: -33%;
+    margin-top: -20%;
+}
+
+.block-HTML5 {
+    transition: 0.3s;
+}
+
+.block-HTML5:hover {
+    transform: translateY(-20px);
+}
+
+.img-block-CSS3 {
+    width: 250px;
+    margin-left: -36%;
+    margin-top: -20%;
+}
+
+.block-CSS3 {
+    transition: 0.3s;
+}
+
+.block-CSS3:hover {
+    transform: translateY(-20px);
+}
+
+.block-HTML5 {
+    transition: 0.3s;
+}
+
+.block-HTML5:hover {
+    transform: translateY(-20px);
+}
+
+.img-block-JS {
+    width: 250px;
+    margin-left: -27%;
+    margin-top: -20%;
+}
+
+.block-JS {
+    transition: 0.3s;
+}
+
+.block-JS:hover {
+    transform: translateY(-20px);
+}
+
+/* Настройки для второй области */
+
+.title-services {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+
+/* Настройки для третьей области */
+
+.title-portfolio {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+
+/* Настройки для карточек из второй и третьей областей */
+
+.container-cards {
+    display: flex;
+    gap: 300px;
+}
+
+.container-cards-service {
+    display: flex;
+    gap: 80px;
+}
+
+.first-card:hover {
+    box-shadow: 0 8px 46px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-20px)
+}
+
+.first-card-service {
+    background-color: #004741;
+    width: 350px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px 0 rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+.first-card-service:hover {
+    background-color: #026d64;
+    box-shadow: 0 8px 46px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-20px)
+}
+
+.first-img-card {
+    width: 300px;
+    padding: 20px;
+}
+
+.title-card {
+    color: white;
+    text-align: center;
+}
+
+.description-card {
+    color: white;
+    text-align: center;
+}
+
+.first-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
+
+.card-container {
+    padding: 2px 16px;
+    z-index: 9;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.second-card {
+    background-color: #004741;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.second-card:hover {
+    background-color: #026d64;
+    box-shadow: 0 8px 46px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-20px)
+}
+
+.second-img-card {
+    width: 500px;
+  height: 400px;
+  overflow: hidden;
+    padding-top: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 55%;
+    gap: 20px;
+    margin-top: -250px;
+}
+
+.label {
+    color: white;
+}
+
+.input {
+    width: 500px;
+    border: 3px solid #00ffea;
+    background-color: #026d64;
+    border-radius: 10px;
+    padding: 25px;
+    color: white;
+    font-size: 26px;
+    transition: 0.2s;
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.input:hover {
+    width: 550px;
+    border: 3px solid #026d64;
+    background-color: #00ffea;
+    border-radius: 10px;
+    padding: 25px;
+    color: white;
+    font-size: 26px;
+    color: black;
+    box-shadow: 0 8px 46px 0 rgba(255, 255, 255, 0.2);
+}
+
+.button-form {
+    width: 500px;
+    border: 3px solid #026d64;
+    background-color: #00ffea;
+    border-radius: 10px;
+    padding: 25px;
+    color: black;
+    font-size: 26px;
+    margin-left: 27px;
+    transition: 0.2s;
+}
+
+.button-form:hover {
+    width: 500px;
+    border: 3px solid #00ffea;
+    background-color: #026d64;
+    border-radius: 10px;
+    padding: 25px;
+    color: white;
+    font-size: 28px;
+    margin-left: 27px;
+    box-shadow: 0 8px 46px 0 rgba(255, 255, 255, 0.2);
+}
+
+.contact-img {
+    width: 90px;
+}
+
+.contact {
+    display: flex;
+    gap: 20px;
+}
+
+.description-contact {
+    margin-left: 250px;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    bottom: 10px;
+}
+
+.desc:hover {
+    color: #00ffea;
+}
+
