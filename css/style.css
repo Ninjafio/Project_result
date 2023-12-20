@@ -175,7 +175,7 @@ body::-webkit-scrollbar {
 }
 
 .container-main {
-    margin-left: 15%;
+    margin-left: 17%;
     display: flex;
     gap: 300px;
 }
@@ -256,12 +256,15 @@ body::-webkit-scrollbar {
 .container-cards {
     display: flex;
     gap: 300px;
+    margin-left: 2%;
 }
 
 .container-cards-service {
     display: flex;
     gap: 80px;
+    margin-left: 1%;
 }
+
 
 .first-card:hover {
     box-shadow: 0 8px 46px 0 rgba(255, 255, 255, 0.2);
